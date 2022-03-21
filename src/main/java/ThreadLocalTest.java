@@ -9,7 +9,7 @@ public class ThreadLocalTest {
                 return new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
             }
         };
-        dateFormatThreadLocal.get();
+        System.out.println(dateFormatThreadLocal.get());
         ThreadLocal<SimpleDateFormat> dateFormatThreadLoca2 = new ThreadLocal(){
             @Override
             protected SimpleDateFormat initialValue() {
