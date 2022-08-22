@@ -7,6 +7,7 @@ public class 饿汉式Single {
     }
 
     public static 饿汉式Single getInstance() {
+
         return single;
     }
 }
